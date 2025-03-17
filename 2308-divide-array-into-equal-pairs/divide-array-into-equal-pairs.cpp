@@ -12,8 +12,8 @@ public:
         }
 
         // Check if every number has an even count
-        for (const auto pair : freq) {
-            if (pair.second % 2 != 0) {
+        for (const  pair<const int,int>  key : freq) {
+            if (key.second % 2 != 0) {
                 return false;
             }
         }
